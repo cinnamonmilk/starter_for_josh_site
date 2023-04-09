@@ -16,38 +16,29 @@
     <section class="container-fluid articlesbg">
         <div class="container">
 
-            <h3>LATEST ARTICLES</h3>
+            <h3 class="text-center"><?php the_field('titleforarticles'); ?></h3>
             <div class="row">
                 <div class="col-md-4">
-                    <img class="img-fluid" src="http://170.187.231.66/~mesh10/wp-content/uploads/2023/03/image2.jpg" alt="woman">
-                    <h4 class="article-title">A PORTRAIT</h4>
-                    <p class="date">Friday November 10. 2030</p>
-                    <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more STS s cholars are
-                        starting to explore and intervene in the arts. This object of study brings new challenges and
-                        opportunities that we want to explore in this session. We would like to gather first of all
-                        simply new kinds of knowledge arising from STS study of the arts.</p>
-                    <a class="readmore" href="#">CONTINUE READING </a>
+                    <img class="img-fluid"  alt="portrait" src="<?php the_field('articleimage');?>">
+                    <h4 class="article-title"><?php the_field('articletitle'); ?></h4>
+                    <p class="date" ><?php the_field('articledate'); ?></p>
+                    <p class="article-p"><?php the_field('articleexcerpt'); ?> </p>
+                    <a href="<?php the_field('readmore'); ?>" class="readmore">CONTINUE READING</a>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-fluid"  src="http://170.187.231.66/~mesh10/wp-content/uploads/2023/03/image3.jpg" alt="woman">
-                    <h4 class="article-title">A PORTRAIT</h4>
-                    <p class="date">Friday November 10. 2030</p>
-                    <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more STS s cholars are
-                        starting to explore and intervene in the arts. This object of study brings new challenges and
-                        opportunities that we want to explore in this session. We would like to gather first of all
-                        simply new kinds of knowledge arising from STS study of the arts.</p>
-                    <a class="readmore" href="#">CONTINUE READING </a>
+                    <img class="img-fluid"  alt="portrait" src="<?php the_field('articleimage2');?>">
+                    <h4 class="article-title"><?php the_field('articletitle2'); ?></h4>
+                    <p class="date" ><?php the_field('articledate2'); ?></p>
+                    <p class="article-p"><?php the_field('articleexcerpt2'); ?> </p>
+                    <a href="<?php the_field('readmore2'); ?>" class="readmore">CONTINUE READING</a>
 
                 </div>
                 <div class="col-md-4">
-                    <img class="img-fluid" src="http://170.187.231.66/~mesh10/wp-content/uploads/2023/03/image4.jpg" alt="leaf">
-                    <h4 class="article-title">A PORTRAIT</h4>
-                    <p class="date">Friday November 10. 2030</p>
-                    <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more STS s cholars are
-                        starting to explore and intervene in the arts. This object of study brings new challenges and
-                        opportunities that we want to explore in this session. We would like to gather first of all
-                        simply new kinds of knowledge arising from STS study of the arts.</p>
-                    <a class="readmore" href="#">CONTINUE READING </a>
+                    <img class="img-fluid"  alt="portrait" src="<?php the_field('articleimage3');?>">
+                    <h4 class="article-title"><?php the_field('articletitle3'); ?></h4>
+                    <p class="date" ><?php the_field('articledate3'); ?></p>
+                    <p class="article-p"><?php the_field('articleexcerpt3'); ?> </p>
+                    <a href="<?php the_field('readmore3'); ?>" class="readmore">CONTINUE READING</a>
                 </div>
 
             </div> <!-- row -->

@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    <header class="container-fluid bg1">
+<header class="container-fluid" style="background-size: cover; background-image: url(<?php the_field('headerbackgroundimage') ?>);">
         <div class="container">
 
             <nav class="navbar navbar-expand-md navbar-dark">
@@ -67,8 +67,9 @@ wp_nav_menu( array(
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
-            <div class="tag">
-            <h1> Game Design for the future</h1>
+            <div class="tag"><!-- div that holds the content in the middle of the page-->
+        <h1><?php the_field('maintagline'); ?></h1>
+
           </div>
 
         </div> <!-- container -->
