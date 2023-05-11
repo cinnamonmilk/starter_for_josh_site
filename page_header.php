@@ -30,12 +30,12 @@
      ?>
 </title>
 <meta name="description" content="<?php bloginfo('description'); ?>">
-<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.png">
 
 </head>
 
 <body>
-    <header class="container-fluid smallpage-bg">
+<header class="container-fluid" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectsheaderbackgroundimage') ?>);">
         <div class="container">
 
             <nav class="navbar navbar-expand-md navbar-dark">
@@ -73,8 +73,8 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
-            <div class="smallpage-tag">
-            <h1 class="smallpage-title"> Projects</h1>
-            </div> <!-- container -->
+            <div class="smallpage-tag"><!-- div that holds the content in the middle of the page-->
+            <h1 class="smallpage-title"><?php the_field('projectsheadertitle'); ?> </h1>
+              </div><!-- container-->
     <?php wp_head(); ?> 
     </header>

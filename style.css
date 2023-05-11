@@ -37,6 +37,12 @@ Version: 1
     margin-right: 15%;
     margin-top: 140px;
 }
+.small_herobg {
+    width: 100%;
+    background: url("images/small_header_bg.jpg ") no-repeat center center;
+    background-size: cover;
+    height: 40vh;
+}
 
 .tag h1{
     width: 341px;
@@ -140,4 +146,11 @@ footer p{
     color: white;
     font-weight: bold;
     padding: 5%;
+}
+
+img.attachment-thumbnail.size-thumbnail.wp-post-image {
+    margin-left: 10px;
+    float: left;
+    margin-right: 10px;
+    padding: 10px;
 }
